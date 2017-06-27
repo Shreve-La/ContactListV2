@@ -15,4 +15,6 @@
 
 -(void)addContact:(Contact *)newContact;
 
+-(void)listContacts:(NSMutableArray *)contactList;
+
 @end

@@ -12,5 +12,7 @@
 
 @property (strong, nonatomic) NSString *emailAddress;
 @property (strong, nonatomic) NSString *fullName;
+@property (assign) NSUInteger uniqueID;
+
 
 @end

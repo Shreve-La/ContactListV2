@@ -31,6 +31,12 @@ int main(int argc, const char * argv[]) {
             contact.fullName = fullNameInput;
             [contactList addContact:contact];
         }
+            
+            if ([selectAction isEqualToString:@"list"])
+            {
+            
+                [contactList listContacts:contactList.contactList];
+            }
         
         
         

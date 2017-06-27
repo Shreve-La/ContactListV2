@@ -17,8 +17,18 @@
 }
 
 -(void)addContact:(Contact *)newContact{
+    newContact.uniqueID = self.contactList.count;
     [self.contactList addObject:newContact];
-
 }
+
+-(void)listContacts:(NSMutableArray *)contactList{
+    for (Contact* contact in contactList) {
+        NSLog(@"#%lu <%@> ", contact.uniqueID, contact.fullName);
+    }
+    
+    }
+
+
+
 
 @end
